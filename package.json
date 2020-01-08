@@ -1,0 +1,20 @@
+{
+  "name": "dear-diary",
+  "version": "1.0.0",
+  "description": "Command line journaling tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Adam Tigar",
+  "license": "ISC",
+  "bin": {
+    "mrbub": "./index.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^4.1.0",
+    "fs": "0.0.1-security"
+  }
+}
