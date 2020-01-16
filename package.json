@@ -9,7 +9,7 @@
   "author": "Adam Tigar",
   "license": "ISC",
   "bin": {
-    "mrbub": "./index.js"
+    "baa": "./index.js"
   },
   "dependencies": {
     "co": "^4.6.0",
