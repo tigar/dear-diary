@@ -15,22 +15,16 @@ program
 
 var entry = program.args.join(' ');
 if (program.ls) {
-    console.log("ls is working")
+    
 }
 
 else {
-    fs.appendFileSync('mrbub.txt', timeStamp() + ' ' + entry + '\n\n');
+    fs.appendFileSync('goatnotes.txt', timeStamp() + ' ' + entry + '\n\n');
 }
 console.log('Entry added');
 
 
 function timeStamp() {
-    var timestamp = new Date();
-    var now = timestamp.getFullYear() + '-' + addZero((timestamp.getMonth() + 1)) + '-' + addZero(timestamp.getDate()) + ' ' + addZero(timestamp.getHours()) + ':' + addZero(timestamp.getMinutes());
-    return now;
+    var now = new Date();
+    return now.toISOString().replace(/T/, ' ').replace(/\..+/, '').slice(0, -3);
   }
-
-function addZero(value) {
-    value = value < 10 ? '0' + value : value;
-    return value;
-}
